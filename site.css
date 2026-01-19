@@ -1,0 +1,60 @@
+﻿body {
+}
+
+#logo {
+    width: 40%;
+}
+
+#imgLogo {
+    width: 200px;
+}
+
+#row1 {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#menu > li {
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+li > a {
+    color:black;
+    border:none;
+    font-style:normal;
+    font-variant:normal;
+    text-decoration:none;
+}
+
+    li > a:hover {
+        color: black;
+        border-bottom:solid;
+        border-bottom-color:lightblue;
+        border-bottom-width:2px;
+    }
+
+    li > a:current {
+        color: red;
+        border-bottom: solid;
+        border-bottom-color: lightblue;
+        border-bottom-width: 2px;
+    }
+
+#row1 > div, #row2 > div {
+    display: inline-block;
+}
+
+
+#row2 {
+    background-color: #2ea5d6;
+    color:#ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+#formDiv {
+    background-color:#ffffff;
+}

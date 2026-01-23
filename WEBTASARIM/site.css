@@ -1,0 +1,251 @@
+﻿body {
+}
+
+
+#logo {
+    width: 40%;
+}
+
+#imgLogo {
+    width: 200px;
+}
+
+#row1 {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#menu > li {
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+#menu > li > a {
+    color:black;
+    border:none;
+    font-style:normal;
+    font-variant:normal;
+    text-decoration:none;
+}
+
+    #menu > li > a:hover {
+        color: black;
+        border-bottom: solid;
+        border-bottom-color: lightblue;
+        border-bottom-width: 2px;
+    }
+
+    #menu > li > a:current {
+        color: red;
+        border-bottom: solid;
+        border-bottom-color: lightblue;
+        border-bottom-width: 2px;
+    }
+
+#row1 > div, #row2 > div, #row3 > div {
+    display: inline-block;
+    
+}
+
+
+#row2 {
+    background-color: #2ea5d6;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+#formDiv {
+    background-color:#ffffff;
+}
+
+#addressDiv {
+    width: 50%;
+    text-align: left;
+    float: left;
+    padding-top: 12px;
+}
+
+#formDiv {
+    width: 15%;
+    text-align: center;
+    float: left;
+}
+#emailDiv {
+    width: 20%;
+    text-align: center;
+    padding-top: 12px;
+    float: left;
+}
+#socialMediaDiv {
+    width: 13%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+    #socialMediaDiv img {
+    /* width:25px;*/   
+    }
+
+    #slider {
+        width: 78%;
+        float: left;
+    }
+
+#sider {
+    width: 20%;
+}
+
+#sider li {
+    border:solid;
+    border-color: #2ea5d6;
+    padding:30px;
+    margin-bottom:15px;
+    list-style:none;
+    text-align:center;
+}
+
+#sider a {
+    color: gray;
+    font-style: normal;
+    font-size:large;
+    font-weight:600;
+    font-variant: normal;
+    text-decoration: none;
+}
+
+#sider a:hover {
+    color: #2ea5d6;
+    font-style: normal;
+    font-variant: normal;
+    text-decoration:double;
+}
+
+#sliderImg {
+    width:100%;
+
+}
+
+#subMenu1 {
+    display:none;
+}
+
+/* MENÜ AYARLARI */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+
+}
+
+.menu {
+    display:flex;
+    justify-content:space-between;
+}
+
+.menu a {
+    color:#fff;
+    text-decoration:none;
+}
+
+    .menu a:hover {
+        color: #ff0000;
+/*        text-decoration: none;*/
+    }
+
+    .menu li {
+       cursor:pointer;
+    }
+    .menu li:hover .dropdown{
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        background-color:#000;
+
+    }
+
+.dropdown {
+    display: none;
+}
+
+.hamburger {
+    display:none;
+}
+
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.toast {
+    padding: 14px 18px;
+    border-radius: 6px;
+    animation: slide 0.4s;
+}
+
+    .toast.success {
+        background: #2ecc71;
+    }
+
+    .toast.info {
+        background-color:orange;
+    }
+
+    .toast.error {
+        background: #e74c3c;
+    }
+
+/* =============== EKRAN FILTRESI KISMI ================  */
+@media(max-width:768px) {
+    /* body {
+        background-color:black;
+    
+    }*/
+    /* #row3 {
+        display: none;
+    }*/
+
+/*    .menu {
+        display:none;  
+    }*/
+
+    .menu {
+        display: none;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .hamburger {
+        display:flex;
+       /* margin-left:200px;*/
+    }
+
+    .navbar {
+        display:flex;
+        /*align-content:space-between;*/
+    }
+
+    .menu.active {
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        background-color:#c0c0c0;
+    }
+
+    .menu li:hover {
+        color:green;
+    }
+
+}
+
